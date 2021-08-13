@@ -143,4 +143,4 @@ bin/
 
 lib64
 
-pyenv.cfg
+pyvenv.cfg
