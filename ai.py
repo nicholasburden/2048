@@ -28,6 +28,7 @@ class BitboardAgent:
 
 	def expectiminimax(self, model, depth, is_player, seen_states, probability):
 		if is_in_sorted_list(seen_states, model.board) or depth == 0 or probability < 0.001:
+			# TODO: Consider caching heuristic result of seen before states. Should be possible as search is depth first
 			bisect.insort(seen_states, model.board)
 			return calculate_heuristic(model.board, self.heuristic_lookup)
 		# TODO: Make seen_states more efficient by using a heap 
