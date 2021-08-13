@@ -136,3 +136,11 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+bin/
+
+.vscode/
+
+lib64
+
+pyenv.cfg
